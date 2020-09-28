@@ -14,7 +14,6 @@ body {
   background: url("../img/bg.jpg") top center no-repeat;
   background-size: cover;
   position: relative;
-  overflow: hidden;
 }
 
 body::before {
