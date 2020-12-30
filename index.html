@@ -1,175 +1,432 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>yuHacks</title>
-    <meta content="" name="descriptison" />
-    <meta content="" name="keywords" />
 
-    <!-- Favicons -->
-    <link href="assets/img/yuHacks-Logo2.jpg" rel="icon" />
-    <link href="assets/img/yuHacks-Logo2.jpg" rel="apple-touch-icon" />
-
-    <!-- Google Fonts -->
+    <!-- Google Font -->
     <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i"
-      rel="stylesheet"
-    />
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
 
-    <!-- Vendor CSS Files -->
-    <link
-      href="assets/vendor/bootstrap/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet" />
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
-    <!-- Template Main CSS File -->
-    <link href="assets/css/style.css" rel="stylesheet" />
-  </head>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-  <body>
-    <!-- ======= Header ======= -->
-    <header id="header" class="d-flex align-items-center">
-      <div class="container d-flex flex-column align-items-center">
-        <h1>yuHacks</h1>
-        <h2>York University's 24 hour virtual hackathon experience.</h2>
-        <h3>February 13th & 14th, 2021</h3>
-        <div
-          class="countdown d-flex justify-content-center"
-          data-count="2021/02/13"
-        >
-          <div>
-            <h3>%D</h3>
-            <h4>Days</h4>
-          </div>
-          <div>
-            <h3>%H</h3>
-            <h4>Hours</h4>
-          </div>
-          <div>
-            <h3>%M</h3>
-            <h4>Minutes</h4>
-          </div>
-          <div>
-            <h3>%S</h3>
-            <h4>Seconds</h4>
-          </div>
-        </div>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 
-        <div class="subscribe">
-          <h4>Subscribe now to get all the latest updates!</h4>
-          <form action="https://formspree.io/mgepvayb" method="POST">
-            <input
-              class="form-control"
-              type="text"
-              name="_replyto"
-              required
-            /><br />
-            <button class="btn btn-danger" type="submit" value="Submit">
-              Submit
-            </button>
-            <div class="mt-2"></div>
-          </form>
-        </div>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-        <script
-          src="https://formspree.io/js/formbutton-v1.min.js"
-          defer
-        ></script>
-        <script>
-          window.formbutton =
-            window.formbutton ||
-            function () {
-              (formbutton.q = formbutton.q || []).push(arguments);
-            };
-          formbutton("create", { action: "https://formspree.io/mgepvayb" });
-        </script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
-        <div class="social-links text-center">
-          <a href="mailto:mike@yuhacks.com" class="linkedin"
-            ><i class="icofont-ui-email"></i
-          ></a>
-          <a href="https://www.instagram.com/yuhacks" class="instagram"
-            ><i class="icofont-instagram"></i
-          ></a>
-          <a href="https://www.linkedin.com/company/yuhacks/" class="linkedin"
-            ><i class="icofont-linkedin"></i
-          ></a>
-        </div>
-      </div>
-    </header>
-    <!-- End #header -->
+    <!-- AOS CSS Library CDN -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <main id="main">
-      <!-- ======= About Us Section ======= 
-      <section id="about" class="about">
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="dist/css/main.css">
+
+    <!-- JS Link -->
+    <script src="./dist/js/main.js" defer></script>
+</head>
+
+<body data-spy="scroll" data-target="#main_nav" data-offset="350">
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-md bg-light navbar-light fixed-top" id="main_nav">
         <div class="container">
-          <div class="row content">
-            <div class="col-lg-6">
-              <h2>By students, for students.</h2>
-              <h3>
-                Voluptatem dignissimos provident quasi corporis voluptates sit
-                assum perenda sruen jonee trave
-              </h3>
-            </div>
-            <div class="col-lg-6 pt-4 pt-lg-0">
-              <p>
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                aute irure dolor in reprehenderit in voluptate velit esse cillum
-                dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                cupidatat non proident, sunt in culpa qui officia deserunt
-                mollit anim id est laborum
-              </p>
-              <ul>
-                <li>
-                  <i class="icofont-check"></i> Ullamco laboris nisi ut aliquip
-                  ex ea commodo consequa
-                </li>
-                <li>
-                  <i class="icofont-check"></i> Duis aute irure dolor in
-                  reprehenderit in voluptate velit
-                </li>
-                <li>
-                  <i class="icofont-check"></i> Ullamco laboris nisi ut aliquip
-                  ex ea commodo consequat. Duis aute irure dolor in
-                  reprehenderit in
-                </li>
-              </ul>
-              <p class="font-italic">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-    -->
-      <!-- End About Us Section -->
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-      <!-- ======= Contact Us Section ======= -->
-      <section id="contact" class="contact"></section>
-      <!-- End Contact Us Section -->
-    </main>
-
-    <!-- ======= Footer ======= -->
-    <footer id="footer">
-      <div class="container">
-        <div class="copyright">
-          Made with &hearts; by York University Students
+            <div class="navbar-collapse collapse" id="collapse_target">
+                <a href="#" class="navbar-brand">
+                    <img class="logo--lion" src="./dist/images/yuHacks-Logo@2x.png" alt="Yorku Lion Logo"
+                        loading="lazy">
+                </a>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">
+                            About
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#tracks" class="nav-link">
+                            Tracks
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#schedule" class="nav-link">
+                            Schedule
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#sponsors" class="nav-link">
+                            Sponsors
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#faq" class="nav-link">
+                            FAQ
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#sticky-footer" class="nav-link">
+                            Contact us
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <a href="https://mlh.io/seasons/2021/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2021-season&utm_content=black"
+                class="logo--mlh" target="_blank">
+                <img src="./dist/images/mlh-logo.82d8be29@2x.png" alt="Major League Hacking Badge" loading="lazy">
+            </a>
         </div>
-      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Section Home Start -->
+    <section id="home" class="home">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 order-lg-12 text-lg-right info mb-5">
+                    <h1 class="display-4"><b>yuHacks</b></h1>
+                    <h2 style="font-size: 1.5rem;">By students at York University, for students everywhere.</h2>
+                    <span class="event-date">
+                        <i class="far fa-calendar icon-small"></i>
+                        February 13-14, 2020
+                    </span>
+                    <span class="event-location">
+                        <i class="fas fa-map-marker-alt icon-small"></i>
+                        Virtual Event
+                    </span>
+                    <div class="btn-container">
+                        <a href="https://uqvf17p4nst.typeform.com/to/QNOKt3rT" target="_blank" class="btn mr-1">Apply as
+                            a Hacker</a>
+                        <a href="https://forms.gle/3Rq8iv4hNN1nfdnz8" target="_blank" class="btn mr-1">Apply as a
+                            Mentor</a>
+                        <a href="mailto:info@yuhacks.com" target="_blank" class="btn">Sponsor us</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 date">
+                    <h1 class="display-4"><b>Save the date</b></h1>
+
+                    <div class="container countdown-container mt-3 mb-5">
+                        <div class="row">
+                            <div class="countdown col-sm-3 col-6 justify-content-center align-items-center">
+                                <div class="countdown__number">
+                                    <span id="days" class="number-text">02</span>
+                                </div>
+                                <div class="countdown__text">
+                                    days
+                                </div>
+                            </div>
+                            <div class="countdown col-sm-3 col-6 justify-content-center align-items-center">
+                                <div class="countdown__number">
+                                    <span id="hours" class="number-text">14</span>
+                                </div>
+                                <div class="countdown__text">
+                                    hours
+                                </div>
+                            </div>
+                            <div class="countdown col-sm-3 col-6 justify-content-center align-items-center">
+                                <div class="countdown__number">
+                                    <span id="minutes" class="number-text">07</span>
+                                </div>
+                                <div class="countdown__text">
+                                    minutes
+                                </div>
+                            </div>
+                            <div class="countdown col-sm-3 col-6 justify-content-center align-items-center">
+                                <div class="countdown__number">
+                                    <span id="seconds" class="number-text">12</span>
+                                </div>
+                                <div class="countdown__text">
+                                    seconds
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center social-media">
+                        <span class="mr-3">Stay connected</span>
+
+                        <a href="https://www.linkedin.com/company/yuhacks/" class="social-media__link mr-2"
+                            target="_blank">
+                            <i class="fab fa-linkedin icon-small"></i>
+                        </a>
+                        <a href="https://www.instagram.com/yuhacks/" class="social-media__link mr-2" target="_blank">
+                            <i class="fab fa-instagram icon-small"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section Home End -->
+
+    <!-- Start of About Section-->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-md" data-aos="fade-right">
+                    <h1 class="mb-3">About yuHacks</h1>
+                    <p>
+                        yuHacks is York University’s 24-hour virtual hackathon by students, for students. We spent
+                        months interviewing fellow students to understand how we could best serve them through our
+                        hackathon. The predominant theme was that students wanted a focus on
+                        <b>Professional Development</b> as they prepare to enter a highly competitive modern workforce.
+                        Through yuHacks, we hope to present attendees with the opportunity to better their professional
+                        selves while engaging in all the fun
+                        you’d expect from a hackathon.
+                    </p>
+                </div>
+                <div class="col-md pt-6" data-aos="fade-left">
+                    <img src="dist\images\Analytics-pana.svg">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of About Section -->
+
+    <!-- Start of Tracks Section-->
+    <section id="tracks" class="tracks">
+        <div class="container" data-aos="fade-up" data-aos-duration="1000">
+            <div class="row text-right">
+                <h1 class="col">Tracks</h1>
+            </div>
+            <div class="row track-card">
+                <div class="col-12 mb-4 icons-container" id="icons">
+                    <div class="icon-scroll">
+                        <a class="btn active"><i id="track1" class="fas fa-graduation-cap active"></i></a>
+                        <a class="btn"><i id="track2" class="fab fa-envira"></i></a>
+                        <a class="btn"><i id="track3" class="fas fa-photo-video"></i></a>
+                        <a class="btn"><i id="track4" class="fas fa-globe-africa"></i></a>
+                        <a class="btn"><i id="track5" class="far fa-lightbulb"></i></a>
+                        <a class="btn"><i id="track6" class="fas fa-star-of-life"></i></a>
+                        <a class="btn"><i id="track7" class="fas fa-user-alt"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 track-content track-content-text">
+                    <h3 id="trackTitle">Education Challenge</h3>
+                    <p id="trackContent">
+                        Tired of Zoom University? This challenge is open to teams who want to rethink education. Whether
+                        tackling the struggles of online education or developing an app that enhances traditional
+                        education, teams will have their work cut out for them with this
+                        track!
+
+                    </p>
+                </div>
+                <div class="col-md-6 col-sm-12 track-content-image">
+                    <img id="trackImage" src="dist/images/Kids_Studying_from_Home-pana_2.svg">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of Tracks Section -->
+
+    <!-- Section Schedule Start -->
+    <section class="schedule" id="schedule">
+        <div class="container">
+            <h1 class="display-4"><b>Schedule</b></h1>
+            <div class="row">
+                <div class="col-lg-6 event-list mb-5 event-list--13">
+                    <h3>Feb 13</h3>
+                    <div class="event-item">
+                        <span class="event-time">Coming soon...</span>
+                        <span class="event-name"></span>
+                    </div>
+                    <!-- <div class="event-item">
+                        <span class="event-time">10:00 AM</span>
+                        <span class="event-name">Event Name</span>
+                    </div>
+                    <div class="event-item">
+                        <span class="event-time">1:30 PM</span>
+                        <span class="event-name">Event Name</span>
+                    </div>
+                    <div class="event-item">
+                        <span class="event-time">5:00 PM</span>
+                        <span class="event-name">Event Name</span>
+                    </div>
+                    <div class="event-item">
+                        <span class="event-time">8:00 PM</span>
+                        <span class="event-name">Event Name</span>
+                    </div>
+                    <div class="event-item">
+                        <span class="event-time">9:30 PM</span>
+                        <span class="event-name">Event Name</span>
+                    </div> -->
+                </div>
+
+                <div class="col-lg-6 mb-5 event-list event-list--14">
+                    <h3>Feb 14</h3>
+                    <div class="event-item">
+                        <span class="event-time">Coming soon...</span>
+                        <span class="event-name"></span>
+                    </div>
+                    <!-- <div class="event-item">
+                        <span class="event-time">10:00 AM</span>
+                        <span class="event-name">Event Name</span>
+                    </div>
+                    <div class="event-item">
+                        <span class="event-time">1:30 PM</span>
+                        <span class="event-name">Event Name</span>
+                    </div>
+                    <div class="event-item">
+                        <span class="event-time">5:00 PM</span>
+                        <span class="event-name">Event Name</span>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section Schedule End -->
+
+    <!-- Sponsors Section Start -->
+    <section class="sponsors" id="sponsors">
+        <div class="container align-items-center">
+            <div class="d-flex justify-content-center">
+                <h1>Our Sponsors</h1>
+            </div>
+            <div class="d-flex justify-content-center">
+                <span class="mt-5" style="font-size: 3rem;">To Be Annouced</span>
+            </div>
+            <!-- <div class="d-flex justify-content-center">
+                <img src="./dist/images/logo-ibm.jpg" alt="IBM Logo" class="img-fluid logo--ibm"></img>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 d-flex justify-content-center align-items-center mb-5">
+                    <img src="./dist/images/logo-mlh.svg" alt="Major League Hacking Logo" class="img-fluid logo--mlh-2">
+                </div>
+                <div class="col-lg-4 d-flex justify-content-center align-items-center mb-5">
+                    <img src="./dist/images/logo-jetbrains.svg" alt="Jet Brain Logo" class="img-fluid logo--jetbrains">
+                </div>
+                <div class="col-lg-4 d-flex justify-content-center align-items-center mb-5">
+                    <img src="./dist/images/logo-sticker-mule.svg" alt="Sticker Mule Logo"
+                        class="img-fluid logo--stickermule">
+                </div>
+            </div> -->
+        </div>
+    </section>
+    <!-- Sponsors Section End -->
+
+    <!-- questions section  -->
+    <section class="questions" id="faq">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <h2>Frequently Asked Questions</h2>
+                    <br>
+                    <h5 class="card-title">What is a hackathon?</h5>
+                    <p class="card-text">
+                        A hackathon is a design sprint-like event; often, in which computer programmers and others
+                        involved in software development, including graphic designers, interface designers, project
+                        managers, domain experts, and others collaborate intensively on software
+                        projects. At yuHacks, we have made it possible for those without technical skills to still get
+                        in on the fun! Check out our tracks for more information!</p>
+                    <h5 class="card-title">I applied, when will decisions be released?
+                    </h5>
+                    <p class="card-text">All application decisions will be made on a rolling basis! The sooner you
+                        apply, the sooner you’ll hear back!
+                    </p>
+
+
+                    <h5 class="card-title">What platforms will be used on event day?
+                    </h5>
+                    <p class="card-text">Leading up to event week, you’ll receive all important information via email.
+                        Our Discord server will open up at the start of event week. Event day communications will all
+                        take place in the Discord server. Most of our events will be
+                        broadcast live on YouTube.
+                    </p>
+
+                    <h5 class="card-title">Where will yuHacks take place?</h5>
+                    <p class="card-text">yuHacks will be entirely virtual! </p>
+
+                    <h5 class="card-title">I’m interested in sponsoring your event!
+                    </h5>
+                    <p class="card-text">We’d love to talk about how we can work together! Please send an email to
+                        info@yuhacks.com and we’ll be sure to get back to you ASAP.
+                    </p>
+                </div>
+                <div class="col-lg-6 text-left" data-aos="fade-left">
+                    <br> <br> <br>
+                    <h5 class="card-title">What kind of events will there be?
+                    </h5>
+                    <p class="card-text">Our specific event focus will be professional development. You can expect
+                        several talks from industry experts, recruiters, and other incredibly talented people! You can
+                        also expect several workshops and games to help you enjoy your
+                        time away from hacking.
+                    </p>
+
+                    <h5 class="card-title">How much does it cost to attend yuHacks?
+                    </h5>
+                    <p class="card-text">There will be no cost involved with attending yuHacks.
+                    </p>
+
+                    <h5 class="card-title">What if I’ve never been to a hackathon before?
+                    </h5>
+                    <p class="card-text">If you’ve never done a hackathon before, you’re definitely in the right place
+                        to change that! We have put together a track just for you!
+                    </p>
+                    <h5 class="card-title">How many people can be on a team?
+                    </h5>
+                    <p class="card-text">Teams can be anywhere from 1-4 hackers.
+                    </p>
+
+                    <h5 class="card-title">Who can participate?</h5>
+                    <p class="card-text">Any student from any institution is welcome to attend! Whether you’re in high
+                        school, college, university, or even a coding bootcamp, you are more than welcome to join in on
+                        the fun!</p>
+
+                    <h5 class="card-title">When do applications open?
+                    </h5>
+                    <p class="card-text">Applications will open on January 1st, 2021!
+                    </p>
+
+                </div>
+            </div>
+
+
+            <div class="text-right">
+                <button id="scrollToTopBtn"> &#8679;</button>
+            </div>
+        </div>
+    </section>
+    <!-- questions section ends -->
+
+    <!-- footer start -->
+    <footer id="sticky-footer" class="py-4 bg-light text-dark-50 footer mt-5">
+
+        <div class="container text-center">
+
+            <p>Stay Connected</p>
+            <div class="icons-container">
+                <a href="https://www.linkedin.com/company/yuhacks/" class="social-media__link" target="_blank">
+                    <i class="fab fa-linkedin icon-small"></i>
+                </a>
+                <a href="https://www.instagram.com/yuhacks/" class="social-media__link" target="_blank">
+                    <i class="fab fa-instagram icon-small"></i>
+                </a>
+            </div>
+            <p>Copyright &copy; yuHacks | <a href="http://mlh.io/code-of-conduct" style="font-size: 1rem;"
+                    target="_blank">Code Of
+                    Conduct</a></p>
+        </div>
     </footer>
-    <!-- End #footer -->
+    <!-- footer end -->
 
-    <!-- Vendor JS Files -->
-    <script src="assets/vendor/jquery/jquery.min.js"></script>
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
-    <script src="assets/vendor/jquery-countdown/jquery.countdown.min.js"></script>
+    <!-- AOS JS Library CDN -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <!-- Template Main JS File -->
-    <script src="assets/js/main.js"></script>
-  </body>
+</body>
+
 </html>
