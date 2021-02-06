@@ -1,0 +1,56 @@
+.tracks {
+  position: relative;
+
+  .track-card {
+    border: #bee2f5 solid 2px;
+    border-radius: 10px;
+    padding: 1.5rem 2rem;
+
+    @media only screen and (max-width: 767px) {
+      border: none;
+      padding: 0;
+    }
+
+    .icons-container {
+      overflow-x: auto;
+
+      // Customize scrollbar
+      &::-webkit-scrollbar {
+        height: 0.2rem;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background: $color-secondary-pallete-1;
+      }
+
+      .icon-scroll {
+        width: max-content;
+      }
+    }
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  i {
+    font-size: 2.5rem;
+    letter-spacing: 30px;
+    color: #bee2f5;
+  }
+
+  p {
+    line-height: 2;
+  }
+
+  a {
+    cursor: pointer;
+  }
+
+  .active {
+    color: #2d698a;
+    text-shadow: 0 0 3px #fff, 0 0 6px #fff, 0 0 12px #fff, 0 0 5px #bee2f5,
+      0 0 10px #bee2f5, 0 0 20px #bee2f5, 0 0 20px #bee2f5;
+  }
+}

@@ -1,0 +1,70 @@
+.navbar {
+  border-bottom: 0.0625rem solid $color-moderate-cyan;
+  background-color: #fff !important;
+
+  .logo--lion {
+    width: 4.1875rem;
+    height: 3.5rem;
+
+    @media only screen and (max-width: 767px) {
+      margin-bottom: 1rem;
+      margin-top: 1rem;
+    }
+  }
+
+  .logo--mlh {
+    overflow: visible;
+    height: 3.5rem;
+    top: 0;
+
+    @media only screen and (max-width: 767px) {
+      position: fixed;
+      top: 0;
+      left: 85vw;
+    }
+
+    img {
+      width: 5.125rem;
+      height: 8.1875rem;
+      transition: all 200ms ease-out;
+
+      &:hover {
+        box-shadow: $shadow-regular;
+      }
+
+      @media only screen and (max-width: 767px) {
+        width: 3.125rem;
+        height: 5.1875rem;
+      }
+    }
+  }
+
+  .nav-item {
+    transition: all 50s ease-in;
+    margin-right: 1rem;
+
+    .nav-link {
+      color: $color-dark-gray;
+      transition: all 150ms ease-in;
+      padding: 0;
+
+      border-bottom: 0 solid rgba($color-vivid-cyan, 0);
+
+      @media only screen and (max-width: 767px) {
+        margin-bottom: 1rem;
+      }
+
+      &:hover {
+        background-color: darken(#fff, 5%);
+        transform: translateY(-0.2rem);
+      }
+    }
+
+    .active {
+      border-bottom: 0.3rem solid rgba($color-vivid-cyan, 1);
+      @media only screen and (max-width: 767px) {
+        border-bottom: none;
+      }
+    }
+  }
+}

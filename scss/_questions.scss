@@ -1,0 +1,33 @@
+.questions {
+  position: relative;
+
+  p {
+    color: #5b869d;
+  }
+
+  #scrollToTopBtn {
+    background-color: white;
+    border: 1px solid #bee2f5;
+    border-radius: 50%;
+    box-shadow: 0 0 2px #51b7cd;
+    color: #2d698a;
+    cursor: pointer;
+    font-size: 30px;
+    line-height: 48px;
+    width: 50px;
+    text-align: center;
+  }
+
+  #scrollToTopBtn:hover {
+    transform: scale(1.1);
+  }
+
+  #scrollToTopBtn:focus {
+    outline: none;
+    box-shadow: 0 0 22px 10px scale-color(#bee2f5, -50%);
+  }
+
+  img {
+    max-height: 30vh;
+  }
+}

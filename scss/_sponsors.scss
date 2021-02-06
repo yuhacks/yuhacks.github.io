@@ -1,0 +1,39 @@
+.sponsors {
+  position: relative;
+
+  h1 {
+    color: $color-dark-moderate-blue;
+  }
+
+  .logo {
+    &--large-rectangle {
+      width: 35rem;
+      height: 18rem;
+    }
+
+    &--medium-rectangle {
+      width: 20rem;
+      height: 10rem;
+    }
+
+    &--medium-square {
+      width: 10rem;
+      height: 10rem;
+    }
+
+    &--medium-long {
+      width: 25rem;
+      height: 12rem;
+    }
+
+    &--jetbrains {
+      width: 8rem;
+      height: 9rem;
+    }
+
+    &--stickermule {
+      width: 27rem;
+      height: 2rem;
+    }
+  }
+}

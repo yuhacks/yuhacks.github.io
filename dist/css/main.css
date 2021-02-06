@@ -254,12 +254,18 @@ section {
   position: relative; }
   .sponsors h1 {
     color: #2d698a; }
-  .sponsors .logo--ibm {
-    width: 16rem;
-    height: 13rem; }
-  .sponsors .logo--mlh-2 {
-    width: 16rem;
-    height: 5rem; }
+  .sponsors .logo--large-rectangle {
+    width: 35rem;
+    height: 18rem; }
+  .sponsors .logo--medium-rectangle {
+    width: 20rem;
+    height: 10rem; }
+  .sponsors .logo--medium-square {
+    width: 10rem;
+    height: 10rem; }
+  .sponsors .logo--medium-long {
+    width: 25rem;
+    height: 12rem; }
   .sponsors .logo--jetbrains {
     width: 8rem;
     height: 9rem; }

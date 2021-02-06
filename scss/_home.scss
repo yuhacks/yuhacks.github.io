@@ -1,0 +1,106 @@
+.home {
+  color: $color-dark-gray;
+
+  .date {
+    .countdown-container {
+      .countdown {
+        &__number {
+          position: relative;
+          padding: 1.5rem 0rem;
+          background-color: rgba($color-dark-gray, 0.2);
+          border-radius: 1.0625rem;
+          text-align: center;
+          font-size: 3rem;
+          font-weight: 500;
+
+          @media only screen and (max-width: 500px) {
+            background-color: #ffffff;
+            padding: 0;
+
+            &::after {
+              display: none;
+            }
+          }
+
+          .number-text {
+            position: relative;
+            margin: 0;
+            z-index: 99;
+          }
+
+          &::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            height: 0.5rem;
+            background-color: #ffffff;
+            width: 100%;
+          }
+        }
+
+        &__text {
+          text-align: center;
+          text-transform: uppercase;
+        }
+      }
+    }
+
+    .social-media {
+      &__link {
+        color: $color-dark-gray;
+        font-size: 2rem;
+        transition: all 100ms ease-in;
+
+        &:hover {
+          transform: translateY(-0.3rem);
+          color: lighten($color-dark-gray, 10%);
+        }
+      }
+    }
+  }
+
+  .info {
+    padding-top: 3.625rem;
+
+    h1 {
+      font-weight: 500;
+      color: $color-moderate-cyan;
+    }
+
+    h2 {
+      color: $color-dark-moderate-blue;
+    }
+
+    .event-date,
+    .event-location {
+      margin-top: 0.9375rem;
+      display: block;
+      color: $color-dark-moderate-blue;
+
+      .icon-small {
+        margin-right: 1rem;
+      }
+    }
+
+    .btn-container {
+      margin-top: 3rem;
+
+      .btn {
+        background-color: $color-dark-cyan;
+        color: #ffffff;
+        margin-top: 1rem;
+
+        @media only screen and (max-width: 358px) {
+          margin-bottom: 1rem;
+        }
+        transition: all 200ms ease-in;
+
+        &:hover {
+          background-color: lighten($color-dark-cyan, 10%);
+        }
+      }
+    }
+  }
+}

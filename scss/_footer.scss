@@ -1,0 +1,20 @@
+.footer {
+  p {
+    color: #2d698a;
+    opacity: 1;
+  }
+
+  a {
+    color: #2d698a;
+    font-size: 2rem;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 .5rem;
+    transition: all 100ms ease-in;
+
+    &:hover {
+      transform: translateY(-.2rem);
+      color: lighten(#2d698a, 10%);
+    }
+  }
+}

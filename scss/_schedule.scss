@@ -1,0 +1,46 @@
+.schedule {
+  color: $color-moderate-cyan;
+  position: relative;
+
+  h1 {
+    color: $color-dark-moderate-blue;
+  }
+
+  .event-list {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    h3 {
+      font-size: 3rem;
+      color: $color-dark-moderate-blue;
+      font-weight: 300;
+    }
+
+    .event-item {
+      border: 0.125rem solid $color-tropical-blue;
+      border-radius: 0.5rem;
+      margin-bottom: 0.625rem;
+      padding: 0.9375rem;
+
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+
+      .event-time {
+        text-align: left;
+      }
+
+      .event-name {
+        text-align: right;
+      }
+    }
+
+    &--13,
+    &--14 {
+      align-self: flex-start;
+    }
+
+    &--14 {
+      position: relative;
+    }
+  }
+}

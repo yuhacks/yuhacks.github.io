@@ -1,0 +1,18 @@
+{
+  "name": "pack-name",
+  "version": "1.0.0",
+  "description": "Descript goes here",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp watch",
+    "buid-css": "gulp style"
+  },
+  "author": "Author Name",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.13",
+    "gulp": "^4.0.2",
+    "gulp-cli": "^2.3.0",
+    "gulp-sass": "^4.1.0"
+  }
+}
