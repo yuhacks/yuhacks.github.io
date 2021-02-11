@@ -206,7 +206,7 @@ section {
       .schedule .event-list .event-item .event-time {
         text-align: left; }
       .schedule .event-list .event-item .event-name {
-        text-align: right; }
+        text-align: left; }
     .schedule .event-list--13, .schedule .event-list--14 {
       align-self: flex-start; }
     .schedule .event-list--14 {
