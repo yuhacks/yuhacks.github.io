@@ -263,6 +263,9 @@ section {
   .sponsors .logo--medium-square {
     width: 10rem;
     height: 10rem; }
+  .sponsors .logo--large-long {
+    width: 35rem;
+    height: 18rem; }
   .sponsors .logo--medium-long {
     width: 25rem;
     height: 12rem; }
